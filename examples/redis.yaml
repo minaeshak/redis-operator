@@ -1,0 +1,8 @@
+apiVersion: cache.example.com/v1alpha1
+kind: Redis
+metadata:
+  name: example-redis
+  namespace: default
+spec:
+  size: 1
+  image: redis:latest
