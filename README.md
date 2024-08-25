@@ -1,8 +1,17 @@
 # redis-operator
-// TODO(user): Add simple overview of use/purpose
-
-## Description
-// TODO(user): An in-depth paragraph about your project and overview of use
+For usage:
+1. Create the CRD
+   
+   `kubectl apply -f config/crd/bases`
+2. Deploy the operator
+   ```sh
+    kubectl apply -f config/manager/manager.yaml
+    kubectl apply -f config/rbac/role.yaml
+    kubectl apply -f config/rbac/role_binding.yaml
+   ```
+3. Create Redis customer resource
+   
+   `kubectl apply -f examples/redis.yaml`
 
 ## Getting Started
 
